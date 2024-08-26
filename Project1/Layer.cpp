@@ -2,7 +2,7 @@
 #include <cmath>
 #include <cstdlib>
 
-// FullyConnectedLayer Å¬·¡½º ±¸Çö
+// FullyConnectedLayer í´ë˜ìŠ¤ êµ¬í˜„
 FullyConnectedLayer::FullyConnectedLayer(int input_dims, int output_dims) : output_dims_(output_dims) {
 	weights_.resize(input_dims, vector<float>(output_dims, 0.0f));
 	biases_.resize(output_dims, 0.0f);
@@ -36,7 +36,7 @@ int FullyConnectedLayer::getOutputDims() const {
 	return output_dims_;
 }
 
-// ReLU Å¬·¡½º ±¸Çö
+// ReLU í´ë˜ìŠ¤ êµ¬í˜„
 ReLU::ReLU(int input_dims) : output_dims_(input_dims) {}
 
 ReLU::~ReLU() = default;
@@ -53,7 +53,7 @@ int ReLU::getOutputDims() const {
 	return output_dims_;
 }
 
-// Sigmoid Å¬·¡½º ±¸Çö
+// Sigmoid í´ë˜ìŠ¤ êµ¬í˜„
 Sigmoid::Sigmoid(int input_dims) : output_dims_(input_dims) {}
 
 Sigmoid::~Sigmoid() = default;
@@ -70,7 +70,7 @@ int Sigmoid::getOutputDims() const {
 	return output_dims_;
 }
 
-//SoftMax Å¬·¡½º ±¸Çö
+//SoftMax í´ë˜ìŠ¤ êµ¬í˜„
 SoftMax::SoftMax(int input_dims) : output_dims_(input_dims) {}
 
 SoftMax::~SoftMax() = default;
